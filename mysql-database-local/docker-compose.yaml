@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mysql-server-db:
+    container_name: mysql-server-db
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin99
+      MYSQL_DATABASE: tests
+      MYSQL_RANDOM_ROOT_PASSWORD: true
+    ports:
+      - "3306:3306"
+    volumes:
+      - /path/on/host:/var/lib/mysql

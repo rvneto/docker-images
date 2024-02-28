@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres-server-db:
+    container_name: postgres-server-db
+    image: postgres
+    restart: always
+    volumes:
+     - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: admin99
+    ports:
+      - 5432:5432
+volumes:
+  pgdata:
