@@ -1,5 +1,4 @@
 ﻿version: "3.3"
-
 services:
   zookeeper:
     image: "docker.io/bitnami/zookeeper:3"
@@ -11,6 +10,7 @@ services:
       - ALLOW_ANONYMOUS_LOGIN=yes
 
   kafka:
+    container_name: kafka-local
     image: "docker.io/bitnami/kafka:2-debian-10"
     ports:
       - "9092:9092"
