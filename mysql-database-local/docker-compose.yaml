@@ -7,9 +7,9 @@ services:
     restart: always
     environment:
       MYSQL_USER: admin
-      MYSQL_PASSWORD: admin99
-      MYSQL_DATABASE: tests
-      MYSQL_RANDOM_ROOT_PASSWORD: true
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: algafood
+      MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
     volumes:
