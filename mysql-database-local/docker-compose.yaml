@@ -9,7 +9,7 @@ services:
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
       MYSQL_DATABASE: algafood
-      MYSQL_ROOT_PASSWORD: root
+      #MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
     volumes:
